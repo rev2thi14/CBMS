@@ -1,0 +1,26 @@
+﻿@model CityBusManagement.Entity.Models.RouteDetails
+
+
+<form enctype="multipart/form-data">
+    <h2>Delete RouteDetails</h2>
+
+    
+
+    <hr />
+    @if (ViewBag.status == "Ok")
+    {
+        <div class="alert alert-success">
+            @ViewBag.message
+        </div>
+    }
+    else if (ViewBag.status == "Error")
+    {
+        <div class="alert alert-danger">
+            @ViewBag.message
+        </div>
+    }
+
+</form>
+<div>
+    <a asp-controller="RoutesDetails" asp-action="RouteDetails">View  List</a>
+</div>

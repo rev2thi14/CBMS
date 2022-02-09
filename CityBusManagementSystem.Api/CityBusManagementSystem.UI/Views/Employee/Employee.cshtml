@@ -1,0 +1,30 @@
+﻿@model IEnumerable<CityBusManagement.Entity.Models.Employee>
+
+
+    <div class="row">
+        <div class="col-12">
+            <h3>Employee</h3>
+            <hr />
+            <table class="table table-light table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>empId</th>
+                        <th>empName</th>
+                        <th>empType</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var employee in Model)
+                    {
+                        <tr>
+                            <td>@employee.empId</td>
+                            <td>@employee.empName</td>
+                            <td>@employee.empType</td>
+                            
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
